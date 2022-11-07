@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myarray=["sara" , "hani","mercer","rashed2"]
+
+       document.write((theleastlength(myarray)));
+        
+
+function theleastlength(myarray)
+{
+for( let i=0 ; i<myarray.length-1;i++)
+{
+    var least=myarray[0].length;
+    if(myarray[i].length<=least)
+    {
+        least=myarray[i].length;
+       var name=myarray[i];
+    }
+    
+}
+return  name;
+}
+
+    </script>
+</body>
+</html>

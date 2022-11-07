@@ -17,15 +17,15 @@ function theleastlength(myarray)
 {
 for( let i=0 ; i<myarray.length-1;i++)
 {
-    var least=myarray[0].length;
-    if(myarray[i].length<=least)
+    var least=myarray[0];
+    if(myarray[i].length<=least.length)
     {
-        least=myarray[i].length;
-       var name=myarray[i];
+        least=myarray[i];
+       
     }
     
 }
-return  name;
+return  least;
 }
 
     </script>

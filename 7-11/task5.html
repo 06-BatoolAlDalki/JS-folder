@@ -11,12 +11,16 @@
 <body>
     <script>
         let x = prompt("please enter the number");
-        if (x % 2 == 0) {
-            document.write("the number is even,False");
+        IsOdd(x);
+        function IsOdd(x) {
+            if (x % 2 == 0) {
+                document.write("the number is even,False");
 
+            }
+            else {
+                document.write("the number is odd , True");
+            }
         }
-        else
-            document.write("the number is odd , True");
     </script>
 </body>
 

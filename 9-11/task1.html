@@ -132,7 +132,7 @@
             localStorage.setItem("major", d.value);
             localStorage.setItem("university", t.value);
 
-            let languages = "";
+            var languages = "";
             if (document.getElementById("h").checked) {
                 languages += document.getElementById("h").value;
             }
@@ -143,7 +143,7 @@
                 languages += document.getElementById("j").value;
             }
 
-            sessionStorage.setItem("languages", languages);
+            localStorage.setItem("languages", languages);
 
             document.getElementById("batool").style.display = "block";
             t1.value = localStorage.getItem("name");

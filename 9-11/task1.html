@@ -52,6 +52,7 @@
         <br>
         <br>
         <button id="submit" style="margin-left: 20px;">Submit</button>
+        <button id="show" style="margin-left: 20px;">Show</button>
 
 
 
@@ -61,7 +62,7 @@
     <div id="batool" style="display:none ;">
         <fieldset>
             <label>name</label>
-            <input style="margin-left: 40px;" type="text" ; id="t1">
+            <span style="margin-left: 40px;" id="t1"></span>
             <br>
             <br>
             <label>age</label>
@@ -145,7 +146,7 @@
 
             localStorage.setItem("languages", languages);
 
-            document.getElementById("batool").style.display = "block";
+
             t1.value = localStorage.getItem("name");
             t2.value = localStorage.getItem("age");
             t3.value = localStorage.getItem("Gender");
@@ -153,7 +154,7 @@
             t5.value = localStorage.getItem("major");
             t6.value = localStorage.getItem("university");
             t7.value = localStorage.getItem("languages");
-
+            document.getElementById("batool").style.display = "block";
 
         }
 
